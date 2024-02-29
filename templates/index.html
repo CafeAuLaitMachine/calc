@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="shadow"></div>
+<div class="calculator-body">
+    <input type="text" value="0" id="result" disabled/>
+    <input type="text" id="evaluate" disabled/>
+    <table class="calculator-operations">
+        <tr>
+            <td><input class="delete-button" value="DEL" type="button" onclick=""></td>
+            <td><input class="sqrt" value="√" type="button" ></td>
+            <td><input class="opp" value="^" type="button" ></td>
+            <td><input class="opp" value="/" type="button" ></td>
+        </tr>
+        <tr>
+            <td><input class="num" value="1" type="button" ></td>
+            <td><input class="num" value="2" type="button" ></td>
+            <td><input class="num" value="3" type="button" ></td>
+            <td><input class="opp" value="*" type="button" ></td>
+        </tr>
+        <tr>
+            <td><input class="num" value="4" type="button" ></td>
+            <td><input class="num" value="5" type="button" ></td>
+            <td><input class="num" value="6" type="button" ></td>
+            <td><input class="opp" value="+" type="button" ></td>
+        </tr>
+        <tr>
+            <td><input class="num" value="7" type="button" ></td>
+            <td><input class="num" value="8" type="button" ></td>
+            <td><input class="num" value="9" type="button" ></td>
+            <td><input class="opp" value="-" type="button" ></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input class="give-answer" value="RESULT" type="button" ></td>
+            <td><input class="num" value="0" type="button" ></td>
+            <td><input class="opp" value="." type="button" ></td>
+        </tr>
+    </table>
+</div>
+<script src="../static/script.js"></script>
+</body>
+</html>
