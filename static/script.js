@@ -8,17 +8,9 @@ let first = false;
 const calculator = document.querySelector('#result')
 const evaluate_screen = document.querySelector("#evaluate")
 
-const screen = (input) => {
+function screen(input) {
     if (!isOp) {
-        if(input === "√"){
-            isSqrt = true;
-        }
-        else if(isSqrt){
-            sqrt_num += input
-        }
-        else{
-            current += input
-        }
+        current += input
         if (calculator.value === "0") {
             calculator.value = input
         } else {
@@ -40,23 +32,17 @@ const operations = document.querySelectorAll(".opp");
 operations.forEach((operation) => {
     operation.addEventListener("click", (event) => {
         if (first) {
-            if (isSqrt){
-                console.log(float(sqrt_num))
-                current += Math.sqrt(float(sqrt_num))
-                isSqrt = false
-            }
             screen(event.target.value)
             isOp = true;
         }
     })
 });
 
-const square = document.querySelector(".sqrt");
-square.addEventListener("click", (event) => {
+const square_root = document.querySelector(".sqrt");
+square_root.addEventListener("click", (event) => {
     console.log(event)
     isOp=false
-    if(!isSqrt){
-        screen(event.target.value)}
+    screen(event.target.value)
 });
 
 
